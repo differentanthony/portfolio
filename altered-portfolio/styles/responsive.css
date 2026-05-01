@@ -1,0 +1,419 @@
+/**
+ * Responsive Utilities & Global Responsive Styles
+ * Main responsive rules for mobile-first, progressive enhancement approach
+ */
+
+/* Prefers Reduced Motion - Accessibility First */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Extra Small Phones (320px and up) */
+@media (min-width: 320px) {
+    .section {
+        padding: 2rem 0;
+    }
+
+    .container-custom {
+        padding: 0 1rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .hero-headline {
+        font-size: clamp(1.75rem, 5vw, 5rem);
+    }
+
+    .section-heading {
+        font-size: clamp(1.25rem, 3vw, 3rem);
+    }
+
+    /* Touch-friendly buttons */
+    button,
+    a[class*="btn"],
+    .social-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Improve spacing for small screens */
+    .hero-btns {
+        gap: 0.75rem;
+    }
+
+    .hero-stats {
+        gap: 1.5rem;
+    }
+
+    .stat-val {
+        font-size: 1.5rem;
+    }
+
+    .section-tag {
+        font-size: 0.6rem;
+    }
+
+    /* Stack on mobile */
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .nav-logo {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Phones (480px and up) */
+@media (min-width: 480px) {
+    .section {
+        padding: 2.5rem 0;
+    }
+
+    .container-custom {
+        padding: 0 1.25rem;
+    }
+
+    .hero-headline {
+        font-size: clamp(2rem, 5.5vw, 5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .section-heading {
+        font-size: clamp(1.5rem, 3.5vw, 3rem);
+    }
+
+    .hero-sub {
+        font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+    }
+
+    .hero-btns {
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-stats {
+        gap: 2rem;
+    }
+
+    .stat-val {
+        font-size: 1.65rem;
+    }
+
+    .about-card {
+        margin-bottom: 1rem;
+    }
+
+    .skill-card {
+        padding: 1.25rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .process-step {
+        padding: 1.25rem;
+    }
+
+    .testi-card {
+        padding: 1.25rem;
+    }
+
+    /* First grid transition - 2 columns for larger screens */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large Phones / Small Tablets (640px and up) */
+@media (min-width: 640px) {
+    .section {
+        padding: 3rem 0;
+    }
+
+    .container-custom {
+        padding: 0 1.5rem;
+    }
+
+    .hero-headline {
+        font-size: clamp(2.25rem, 6vw, 5rem);
+    }
+
+    .section-heading {
+        font-size: clamp(1.75rem, 4vw, 3rem);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .about-card {
+        margin-bottom: 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .testi-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Service row improvements */
+    .service-row {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .service-num {
+        min-width: 2rem;
+        flex-shrink: 0;
+    }
+
+    .service-title {
+        min-width: 150px;
+    }
+
+    .service-desc {
+        flex: 1;
+    }
+
+    .service-tags {
+        justify-content: flex-end;
+        min-width: 160px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .contact-btns {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .section-header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .nav-mobile-toggle {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+
+    .nav-cta {
+        display: inline-block !important;
+    }
+
+    .nav-mobile-menu {
+        display: none !important;
+    }
+}
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .container-custom {
+        padding: 0 1.5rem;
+    }
+
+    .hero-headline {
+        font-size: clamp(2.5rem, 6vw, 5rem);
+    }
+
+    .section-heading {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .hero-stats {
+        gap: 2.5rem;
+    }
+
+    .stat-val {
+        font-size: 1.75rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testi-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Landscape orientation support */
+    @media (orientation: landscape) {
+        .hero {
+            min-height: auto;
+            padding-top: 100px;
+        }
+
+        .hero-scroll {
+            display: none;
+        }
+
+        .hero-stats {
+            flex-direction: row;
+            gap: 3rem;
+        }
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .section {
+        padding: 5rem 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* Service row hover stays visible */
+    .service-row:hover {
+        background: rgba(74, 124, 74, 0.08);
+    }
+}
+
+/* Large Desktop (1280px and up) */
+@media (min-width: 1280px) {
+    .container-custom {
+        padding: 0 2rem;
+    }
+
+    .section {
+        padding: 5.5rem 0;
+    }
+
+    .hero-headline {
+        font-size: clamp(3rem, 6vw, 5rem);
+    }
+
+    .section-heading {
+        font-size: clamp(2.5rem, 4vw, 3rem);
+    }
+
+    /* More generous spacing on large screens */
+    .about-grid {
+        gap: 5rem;
+    }
+
+    .skills-grid {
+        gap: 2rem;
+    }
+
+    .projects-grid {
+        gap: 2rem;
+    }
+
+    .section-header {
+        gap: 2rem;
+    }
+}
+
+/* Extra Large (1920px and up) */
+@media (min-width: 1920px) {
+    .container-custom {
+        max-width: 1400px;
+    }
+
+    .section {
+        padding: 6rem 0;
+    }
+
+    /* Improve max-widths for readability */
+    .hero-sub {
+        max-width: 640px;
+    }
+
+    .section-sub {
+        max-width: 400px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .navbar,
+    .hero-scroll {
+        display: none;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+}
