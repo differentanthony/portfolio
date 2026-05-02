@@ -8,6 +8,7 @@ export type Project = {
   aiAssisted: boolean;
   result: string;
   thumbnail: string;
+  url?: string;
   year: string;
 };
 

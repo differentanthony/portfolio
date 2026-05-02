@@ -47,7 +47,7 @@ export default function Hero() {
       >
         <span className="section-tag">Altered — D-IT Solutions</span>
         <h1 className="hero-headline">
-          I don't just build sites.
+          I don&apos;t just build sites.
           <br />I build{" "}
           <span
             className="accent"
@@ -70,7 +70,7 @@ export default function Hero() {
             See My Work
           </a>
           <a href="#contact" className="btn-outline">
-            Let's Work Together
+            Let&apos;s Work Together
           </a>
         </div>
         <div className="hero-stats">

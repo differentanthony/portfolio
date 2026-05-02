@@ -41,7 +41,7 @@ export default function Testimonials() {
       <div className="container-custom">
         <span className="section-tag">Client words</span>
         <h2 className="section-heading" style={{ marginBottom: "2.5rem" }}>
-          Don't take my word <span className="accent">for it.</span>
+          Don&apos;t take my word <span className="accent">for it.</span>
         </h2>
         <div className="testi-grid">
           {testimonials.map((t, i) => (

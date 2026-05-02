@@ -87,16 +87,18 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <p className="text-[#E8F0E0] font-medium">{project.result}</p>
         </div>
 
-        {/* Live link */}
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 px-8 py-4 bg-[#2D5A2D] text-[#E8F0E0] text-sm tracking-widest uppercase hover:bg-[#4A7C4A] transition-all duration-200"
-        >
-          View Live Site
-          <ArrowUpRight size={16} />
-        </a>
+        {/* Live link — only shows if url exists */}
+        {project.url && (
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[#2D5A2D] text-[#E8F0E0] text-sm tracking-widest uppercase hover:bg-[#4A7C4A] transition-all duration-200"
+          >
+            View Live Site
+            <ArrowUpRight size={16} />
+          </a>
+        )}
       </div>
     </main>
   );
