@@ -11,7 +11,7 @@ const steps = [
     number: "02",
     name: "Research",
     description:
-      "I dig into your industry, study your competitors, and find the gaps. This is where I figure out how to position you to stand out.",
+      "I study your industry, analyse your competitors, and pull visual inspiration until I have a clear direction. Nothing gets built until the vision is locked.",
   },
   {
     number: "03",
@@ -23,7 +23,7 @@ const steps = [
     number: "04",
     name: "Design",
     description:
-      "Every layout, every colour, every detail — designed from scratch around your brand. Nothing generic, nothing recycled.",
+      "Every layout, every colour, every detail — designed from scratch around your brand. I don't use templates. I research, I think, then I create something that's entirely yours.",
   },
   {
     number: "05",

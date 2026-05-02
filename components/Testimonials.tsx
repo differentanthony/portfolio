@@ -2,25 +2,32 @@ import ScrollReveal from "./ScrollReveal";
 
 const testimonials = [
   {
-    name: "Client Name",
-    role: "Business Owner",
-    quote:
-      "Altered didn't just build us a website — he built us a presence. Our enquiries doubled within the first month.",
-    initial: "C",
-  },
-  {
-    name: "Client Name",
+    name: "Investment Platform Client",
     role: "Founder",
     quote:
-      "The process was smooth from start to finish. He asked the right questions and delivered something beyond what we imagined.",
-    initial: "C",
+      "I gave him a test to see what he was capable of. He did not just meet the brief, he went beyond it and genuinely surprised me. I was not expecting that level.",
+    initial: "F",
   },
   {
-    name: "Client Name",
-    role: "CEO",
+    name: "Business Website Client",
+    role: "Business Owner",
     quote:
-      "What stood out was how he understood our business first before touching any code. The result speaks for itself.",
-    initial: "C",
+      "He took the time to understand the actual problem I was facing, not just what I asked for. The result showed that. It was not just a website, it was a real solution.",
+    initial: "B",
+  },
+  {
+    name: "E-Commerce Client",
+    role: "Store Owner",
+    quote:
+      "My customers can now shop online without getting lost or confused. He kept everything simple and clean, exactly the way I wanted it. My clients are happy and so am I.",
+    initial: "S",
+  },
+  {
+    name: "Web Project Client",
+    role: "Entrepreneur",
+    quote:
+      "I keep telling people he built me a billion dollar website. I am not joking. It looks and feels like something that cost ten times what I actually paid.",
+    initial: "E",
   },
 ];
 

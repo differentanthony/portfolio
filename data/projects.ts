@@ -7,33 +7,21 @@ export type Project = {
   stack: string[];
   aiAssisted: boolean;
   result: string;
-  url: string;
+  thumbnail: string;
   year: string;
 };
 
 export const projects: Project[] = [
   {
-    slug: "sunvotes",
-    name: "SunVotes",
-    type: "Business Website",
-    industry: "Solar Investment",
-    description: "A clean, professional business website for a solar investment company — built to establish credibility and convert visitors into enquiries.",
-    stack: ["React", "HTML", "CSS", "Tailwind", "JavaScript"],
-    aiAssisted: false,
-    result: "Client launched successfully and gained more customers.",
-    url: "#",
-    year: "2024",
-  },
-  {
-    slug: "hanethical-investment",
-    name: "Hanethical Investment",
+    slug: "first-investment",
+    name: "First Investment Platform",
     type: "Investment Platform",
     industry: "Finance & Investment",
-    description: "A full investment platform with user authentication, real-time data, and a clean dashboard experience built for serious investors.",
-    stack: ["React", "TypeScript", "Tailwind", "Supabase"],
+    description: "A full investment platform where users invest in energy, stocks, crypto, real estate, and forex. Features user authentication, crypto and fiat payment processing, admin dashboard, automated capital and returns payout at period expiry, email notifications, and security hardening throughout.",
+    stack: ["React", "TypeScript", "Tailwind", "Supabase", "Flutterwave", "Crypto Payments", "Admin Dashboard", "Email Notifications", "REST APIs"],
     aiAssisted: true,
-    result: "Successfully launched and serving active users.",
-    url: "#",
+    result: "Live and serving active investors.",
+    thumbnail: "/images/first.png",
     year: "2025",
   },
   {
@@ -41,11 +29,11 @@ export const projects: Project[] = [
     name: "Big Men Transaction Apparel",
     type: "E-Commerce Store",
     industry: "Fashion & Apparel",
-    description: "A production-ready e-commerce store for a fashion brand — complete with Shopify integration, SEO optimization, and a seamless shopping experience.",
-    stack: ["Next.js", "TypeScript", "Tailwind", "Shopify", "Supabase", "SEO"],
+    description: "A production-ready men's clothing store covering everything from trousers and shoes to caps and underwear. Built with Shopify integration, fiat and crypto payment options, admin order management, client content management, email notifications, and SEO optimization.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Shopify", "Flutterwave", "Crypto Payments", "Supabase", "CMS", "Admin Dashboard", "SEO"],
     aiAssisted: true,
     result: "Ongoing — production ready and live.",
-    url: "#",
+    thumbnail: "/images/bmt.png",
     year: "2025",
   },
   {
@@ -53,12 +41,24 @@ export const projects: Project[] = [
     name: "The Hotel",
     type: "Business Website",
     industry: "Hospitality",
-    description: "An elegant hotel website designed to showcase rooms, amenities, and drive direct bookings — built with a premium look and feel.",
-    stack: ["React", "Tailwind", "CSS", "JavaScript"],
+    description: "An elegant hotel website with room showcasing, amenities display, and direct booking functionality. Includes Flutterwave payment integration, booking confirmation emails, admin reservation management, client content management, and security best practices.",
+    stack: ["React", "Tailwind", "JavaScript", "Flutterwave", "Admin Dashboard", "CMS", "Email Notifications", "REST APIs"],
     aiAssisted: false,
     result: "Client launched successfully.",
-    url: "#",
+    thumbnail: "/images/hotel.png",
     year: "2024",
+  },
+  {
+    slug: "agripure",
+    name: "AgriPure",
+    type: "E-Commerce Store",
+    industry: "Food & Agriculture",
+    description: "A farm-to-table e-commerce platform where users buy fresh fruits, vegetables, and food straight from the farm. Features Flutterwave payment processing, order tracking, admin inventory management, client content management, email notifications, and secure checkout.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Supabase", "Flutterwave", "Admin Dashboard", "CMS", "Email Notifications", "SEO"],
+    aiAssisted: true,
+    result: "Live and serving customers.",
+    thumbnail: "/images/agripure.png",
+    year: "2025",
   },
   {
     slug: "altered-portfolio",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     stack: ["Next.js 14", "TypeScript", "Tailwind", "Framer Motion"],
     aiAssisted: true,
     result: "Live personal brand & portfolio.",
-    url: "#",
+    thumbnail: "/images/altered-portfolio.png",
     year: "2026",
   },
 ];

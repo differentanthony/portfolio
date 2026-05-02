@@ -18,7 +18,7 @@ export default function Contact() {
           </p>
           <div className="contact-btns">
             <a
-              href="https://wa.me/PLACEHOLDER"
+              href="https://wa.me/2347048151505"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary contact-btn-icon"
@@ -34,7 +34,7 @@ export default function Contact() {
               Chat on WhatsApp
             </a>
             <a
-              href="mailto:PLACEHOLDER@email.com"
+              href="mailto:differenttech6@gmail.com"
               className="btn-outline contact-btn-icon"
             >
               <svg

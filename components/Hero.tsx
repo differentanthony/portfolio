@@ -75,8 +75,8 @@ export default function Hero() {
         </div>
         <div className="hero-stats">
           {[
-            { val: "3–5", label: "Years building" },
-            { val: "5+", label: "Projects shipped" },
+            { val: "2024", label: "Year founded" },
+            { val: "4+", label: "Projects shipped" },
             { val: "2+", label: "Countries served" },
             { val: "∞", label: "Problems to solve" },
           ].map((s) => (

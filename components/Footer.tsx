@@ -1,5 +1,3 @@
-import { GitFork } from "lucide-react";
-
 const navLinks = [
   "About",
   "Services",
@@ -17,21 +15,25 @@ const serviceLinks = [
   "Website Redesign",
 ];
 const socials = [
-  { label: "TT", href: "#", title: "TikTok" },
+  {
+    label: "TT",
+    href: "https://www.tiktok.com/@d_techsolutions",
+    title: "TikTok",
+  },
   { label: "IG", href: "#", title: "Instagram" },
-  { label: "𝕏", href: "#", title: "Twitter / X" },
-  { label: "in", href: "#", title: "LinkedIn" },
-  { label: "GH", href: "#", title: "GitHub" },
+  { label: "𝕏", href: "https://x.com/D_TECHSOLUTIONZ", title: "Twitter / X" },
+  { label: "GH", href: "https://github.com/differentanthony", title: "GitHub" },
 ];
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#122212", borderTop: "1px solid #1E3A1E" }}>
+    <footer style={{ background: "#0A0F0A", borderTop: "1px solid #1E3A1E" }}>
       <div
         className="container-custom"
-        style={{ paddingTop: "3.5rem", paddingBottom: "2rem" }}
+        style={{ paddingTop: "4rem", paddingBottom: "2rem" }}
       >
         <div className="footer-grid">
+          {/* Brand col */}
           <div>
             <div className="footer-logo">
               Altered<span>.</span>
@@ -47,13 +49,18 @@ export default function Footer() {
                   key={s.title}
                   href={s.href}
                   aria-label={s.title}
+                  title={s.title}
                   className="social-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {s.label}
                 </a>
               ))}
             </div>
           </div>
+
+          {/* Nav col */}
           <div>
             <div className="footer-col-title">Navigation</div>
             <div className="footer-links">
@@ -64,6 +71,8 @@ export default function Footer() {
               ))}
             </div>
           </div>
+
+          {/* Services col */}
           <div>
             <div className="footer-col-title">Services</div>
             <div className="footer-links">
@@ -75,11 +84,34 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Divider */}
+        <div
+          style={{
+            height: "1px",
+            background:
+              "linear-gradient(to right, transparent, #2D5A2D, transparent)",
+            margin: "2rem 0",
+          }}
+        />
+
+        {/* Bottom bar */}
         <div className="footer-bottom">
           <span className="footer-copy">
             © 2026 Altered — D-IT Solutions. All rights reserved.
           </span>
-          <span className="footer-built">Built with Next.js + AI</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <span
+              style={{
+                width: "6px",
+                height: "6px",
+                borderRadius: "50%",
+                background: "#2D5A2D",
+                display: "inline-block",
+              }}
+            />
+            <span className="footer-built">Built with Next.js + AI</span>
+          </div>
         </div>
       </div>
     </footer>
